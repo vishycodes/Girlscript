@@ -1,2 +1,2 @@
 # Girlscript
-Repositpry
+Repository
