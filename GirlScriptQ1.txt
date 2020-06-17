@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int maxnumber_function(double a,double b,double c)
+{
+    int result;
+    if((a >= b) && (a >=c))
+    {
+        result = a;
+    }
+    else if((b >= a)&&(b >= c))
+    {
+        result = b;
+    }
+    else if((c >= a) && (c >= a))
+    {
+        result = c;
+    }
+
+
+    return result;
+}
+int main()
+{
+
+    long double a;
+    long double b;
+    long double c;
+    cout <<"Please Enter the numbers a,b,c respecitively"<<endl;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+
+    cout << "The maximum number is:";
+    cout << maxnumber_function(a,b,c);
+
+    return 0;
+
+}

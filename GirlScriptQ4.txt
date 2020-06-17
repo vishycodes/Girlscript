@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+double discrminant_function(double a , double b, double c)
+{
+    double result;
+    result = ((b*b)-4*a*c);
+    return result;
+}
+
+double real_root_checker(double a , double b , double c)
+{
+    if(discrminant_function(a,b,c)>0)
+    {
+        cout << "2 Real roots"<<endl;
+    }
+    else if(discrminant_function(a,b,c)==0)
+    {
+        cout <<"One Real Disctinct root"<<endl;
+    }
+    else
+    {
+        cout << "No Real Roots"<< endl;
+    }
+}
+
+int main(void)
+{
+    double a;
+    double b;
+    double c;
+
+    cout <<"Enter the a,b,c respectively"<<endl;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+
+    real_root_checker(a,b,c);
+}

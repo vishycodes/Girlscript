@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int division_checker(int number)
+{
+    if(number % 7 == 0)
+    {
+        cout << "The number is divisible by 7"<< endl;
+
+    }
+    else
+    {
+        cout << "The number is not divisible by 7"<<endl;
+    }
+}
+
+int main(void)
+{
+    cout <<"Enter the number"<<endl;
+    int number;
+    cin >> number;
+    division_checker(number);
+
+}
