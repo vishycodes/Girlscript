@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main(void)
+{
+
+   int i;
+   int number;
+   cout << "Please Enter a positive Integer: ";
+   cin >> number;
+   int result = 1;
+
+
+   if(number < 0)
+   {
+       cout << "Number entered is invalid"<<endl;
+   }
+   else{
+
+        for(i=1;i<=number;++i)
+        {
+            result*=i;
+        }
+    cout << "The factorial of " << number << " is:";
+    cout << result <<endl;
+   }
+   return 0;
+}

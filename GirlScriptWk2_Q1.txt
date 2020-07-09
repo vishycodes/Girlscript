@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+
+char vowel_checker(char user_input)
+{
+    switch(user_input){
+
+ case 'a':
+    cout << "Charcter is a vowel" <<endl<<endl;
+    break;
+ case 'e':
+    cout << "Charcter is a vowel" <<endl<<endl;
+    break;
+ case 'i':
+    cout << "Charcter is a vowel" <<endl<<endl;
+    break;
+ case 'o':
+    cout << "Charcter is a vowel"  <<endl<<endl;
+    break;
+ case 'u':
+    cout << "Charcter is a vowel" <<endl<<endl;
+    break;
+ default:
+    cout <<"Charcter entered is not a vowel"<<endl<<endl;
+    break;
+}
+
+}
+int main(void)
+{
+    char user_input;
+    cout << "Please Enter Character" << endl;
+    cin >> user_input;
+
+    cout <<  vowel_checker(user_input);
+
+    return 0;
+}

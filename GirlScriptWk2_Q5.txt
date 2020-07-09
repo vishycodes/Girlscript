@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main(void)
+{
+  float adder[20];
+  int num_elements;
+
+  float sum =0;
+  float average;
+  int i;
+
+  cout << "Enter Amount of Elements you want to add into array" <<endl;
+  cin >> num_elements;
+
+  for(i=0;i<num_elements;i++){
+    cout << "Enter Element:" << i+1 << ":" << endl;
+    cin >> adder[i];
+    sum += adder[i];
+  }
+  cout << "The Sum of elements is :"<<sum<<endl;
+  average = sum / num_elements;
+  cout <<"Average:"<< average;
+
+  return 0;
+}

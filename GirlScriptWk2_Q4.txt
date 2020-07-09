@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int sum_function(int number)
+{
+    int sum = 0;
+
+    do
+    {
+        sum = sum + number % 10;
+        number = number/10;
+    }
+    while(number!=0);
+
+    return sum;
+}
+
+int main(void)
+{
+    int number;
+
+    cout << "Please Enter a number" <<endl;
+    cin >> number ;
+
+     if(number == 0)
+    {
+        cout << "0" <<endl;
+    }
+
+    cout << "Sum of digits is:";
+    cout << sum_function(number);
+
+    return 0;
+
+
+}
